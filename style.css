@@ -184,4 +184,80 @@ footer {
   .course-selection {
       grid-template-columns: 1fr;
   }
+
+#hero {
+  text-align: center;
+}
+
+#hero h2 {
+  color: #35424a;
+  margin-bottom: 20px;
+}
+
+#fam {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+#hero p {
+  margin-bottom: 20px;
+}
+
+.btn {
+  display: inline-block;
+  background: #42f593;
+  color: #000000;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background: #35424a;
+  color: #ffffff;
+}
+
+@media(max-width: 768px) {
+  #hero h2 {
+      font-size: 24px;
+  }
+
+  #hero p {
+      font-size: 16px;
+  }
+}
+
+.course-image {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.section li {
+  margin-bottom: 20px;
+}
+
+.section a {
+  text-decoration: none;
+  color: #35424a;
+  font-weight: bold;
+}
+
+.section a:hover {
+  color: #42f593;
+}
+
 }

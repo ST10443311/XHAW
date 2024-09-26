@@ -3,55 +3,100 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Checkout - WorkWise Academy</title>
+    <title>WorkWise Academy - Checkout</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 </head>
 <body>
     <header>
-        <img src="Images\Logo.jpg" alt="Logo" width="20">
-        <h1>WorkWise Academy</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="courses.html">Courses</a></li>
-                <li><a href="checkout.html">Checkout</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <div class="logo-container">
+                <img src="Images/Logo.jpg" alt="WorkWise Academy Logo" class="logo">
+                <h1>WorkWise Academy</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="checkout.html" class="current">Checkout</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <section id="checkout">
-        <h2>Checkout</h2>
-        <form id="checkout-form">
-            <label for="name">Name:</label>
-            <input type="text" id="name" required>
-
-            <label for="email">Email:</label>
-            <input type="email" id="email" required>
-
-            <label for="courses">Select Courses:</label>
-            <select id="courses" multiple>
-                <option value="1500">First Aid - R1500</option>
-                <option value="1500">Sewing - R1500</option>
-                <option value="1500">Life Skills - R1500</option>
-                <option value="1500">Landscaping - R1500</option>
-                <option value="750">Childminding - R750</option>
-                <option value="750">Garden Maintenance - R750</option>
-                <option value="750">Cooking - R750</option>
-            </select>
-
-            <button type="button" onclick="calculateTotal()">Calculate Total</button>
-
-            <p>Total: <span id="total">0</span></p>
-
-            <button type="submit">Submit</button>
-        </form>
-    </section>
+    <main class="container">
+        <section id="checkout" class="section">
+            <h2>Checkout</h2>
+            <form id="checkout-form">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <h3>Select Your Courses:</h3>
+                <div class="course-selection">
+                    <div class="course-item">
+                        <label>
+                            <input type="checkbox" name="course" value="1500" data-course="First Aid">
+                            First Aid - R1500
+                        </label>
+                    </div>
+                    <div class="course-item">
+                        <label>
+                            <input type="checkbox" name="course" value="1500" data-course="Sewing">
+                            Sewing - R1500
+                        </label>
+                    </div>
+                    <div class="course-item">
+                        <label>
+                            <input type="checkbox" name="course" value="1500" data-course="Life Skills">
+                            Life Skills - R1500
+                        </label>
+                    </div>
+                    <div class="course-item">
+                        <label>
+                            <input type="checkbox" name="course" value="1500" data-course="Landscaping">
+                            Landscaping - R1500
+                        </label>
+                    </div>
+                    <div class="course-item">
+                        <label>
+                            <input type="checkbox" name="course" value="750" data-course="Childminding">
+                            Childminding - R750
+                        </label>
+                    </div>
+                    <div class="course-item">
+                        <label>
+                            <input type="checkbox" name="course" value="750" data-course="Garden Maintenance">
+                            Garden Maintenance - R750
+                        </label>
+                    </div>
+                    <div class="course-item">
+                        <label>
+                            <input type="checkbox" name="course" value="750" data-course="Cooking">
+                            Cooking - R750
+                        </label>
+                    </div>
+                </div>
+                
+                <div class="total">
+                    <strong>Total: <span id="total">R 0</span></strong>
+                </div>
+                <button type="submit" class="btn">Proceed to Payment</button>
+            </form>
+        </section>
+    </main>
 
     <footer>
-        <p>&copy; 2024 WorkWise Academy</p>
+        <div class="container">
+            <p>&copy; 2024 WorkWise Academy. Empowering the Nation.</p>
+        </div>
     </footer>
 </body>
 </html>
