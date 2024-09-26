@@ -1,0 +1,71 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+header {
+  background-color: #08df68;
+  color: #fff;
+  padding: 15px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 10px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+section {
+  padding: 20px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #333;
+  color: #fff;
+}
+
+#hero {
+  background: white;
+  color: black;
+  padding: 50px;
+  text-align: center;
+}
+
+#hero .btn {
+  background: #08df68;
+  color: black;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+#courses ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#courses ul li {
+  margin: 10px 0;
+}
+
+#checkout-form label, #checkout-form input, #checkout-form select {
+  display: block;
+  margin: 10px 0;
+}
